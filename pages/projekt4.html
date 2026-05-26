@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying Content - Produktfotografi</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="../Stylesheet/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="site-header__logo-link" href="index.html">
+    <img class="site-header__logo" src="../images/logo.png" alt="Flying Content logo">
+  </a>
+
+  <nav class="site-header__nav">
+    <a class="site-header__link" href="index.html">Forside</a>
+    <a class="site-header__link site-header__link--active" href="projekter.html">Projekter</a>
+    <a class="site-header__link" href="ansigtet-bag.html">Ansigtet bag</a>
+    <a class="site-header__link" href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <button class="site-header__menu-button" type="button" aria-label="Åbn menu" aria-expanded="false">
+    <img class="site-header__menu-icon" src="../images/menu-icon.png" alt="">
+  </button>
+</header>
+
+<main>
+
+  <section class="project-detail-hero">
+    <div class="project-detail-hero__content">
+      <h1 class="project-detail-hero__title">
+        Produkt<em>fotografi</em>
+      </h1>
+    </div>
+
+    <img class="project-detail-hero__image" src="../images/projekt4-hero.jpg" alt="Bloomit mors dags-buket">
+  </section>
+
+  <section class="product-case-intro">
+    <h2 class="product-case-intro__title">
+      Produktfotografi <em>til</em> Bloomit Odenses mors dags-<em>kampagne</em>
+    </h2>
+
+    <p class="product-case-intro__text">
+      Produktfotografi udviklet til Bloomit Odenses mors dags-kampagne med fokus på visuel præsentation,
+      branding og partnerkommunikation.
+    </p>
+
+    <p class="product-case-intro__text">
+      Billederne blev produceret til brug på digitale platforme samt udsendelse til Bloomits samarbejdspartnere
+      for at præsentere mors dags-buketten 2026. Projektet havde fokus på at skabe et varmt og indbydende
+      visuelt udtryk, der understøtter blomsterbinderiets håndværk og brandidentitet gennem komposition,
+      styling og lys.
+    </p>
+  </section>
+
+  <section class="product-case-gallery">
+    <img class="product-case-gallery__image" src="../images/projekt4-1.jpg" alt="Bloomit mors dags-buket">
+    <img class="product-case-gallery__image" src="../images/projekt4-2.jpg" alt="Bloomit produktfoto af buket">
+    <img class="product-case-gallery__image" src="../images/projekt4-3.jpg" alt="Detaljebillede af Bloomit buket">
+  </section>
+
+  <section class="project-detail-skills product-case-skills">
+    <h2 class="project-detail-skills__title">
+      Kompetencer <em>opnået</em>
+    </h2>
+
+    <p class="project-detail-skills__text">
+      Produktfotografi <span>•</span> Visuel kommunikation <span>•</span> Lysopsætning <span>•</span> Contentproduktion <span>•</span> Billedredigering
+    </p>
+  </section>
+
+  <section class="projects-cta">
+    <h2 class="projects-cta__title">
+      Lyder <em>jeg</em> som<br>
+      <em>noget</em> for jer?
+    </h2>
+
+    <div class="projects-cta__content">
+      <p class="projects-cta__text">
+        Har I et projekt, en idé eller et behov, der kræver stærkt visuelt indhold,
+        så lad os tale om det — jeg vil gerne høre mere.
+      </p>
+
+      <a class="projects-cta__button" href="kontakt.html">Kontakt</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__logo-box">
+    <img class="site-footer__logo" src="../images/logo.png" alt="Flying Content logo">
+  </div>
+
+  <div class="site-footer__column">
+    <h3 class="site-footer__title">Kontakt</h3>
+    <p class="site-footer__text">Ditte Olivia Holm Pedersen</p>
+    <p class="site-footer__text">+45 60 88 39 01</p>
+    <p class="site-footer__text">ditteoliviaholm@hotmail.com</p>
+  </div>
+
+  <div class="site-footer__column">
+    <h3 class="site-footer__title">Navigation</h3>
+    <a class="site-footer__link" href="projekter.html">Projekter</a>
+    <a class="site-footer__link" href="ansigtet-bag.html">Ansigtet bag</a>
+    <a class="site-footer__link" href="kontakt.html">Kontakt</a>
+  </div>
+</footer>
+
+<script>
+  const menuButton = document.querySelector(".site-header__menu-button");
+  const navigation = document.querySelector(".site-header__nav");
+
+  menuButton.addEventListener("click", function () {
+    navigation.classList.toggle("site-header__nav--open");
+
+    const isOpen = navigation.classList.contains("site-header__nav--open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+</script>
+
+</body>
+
+</html>

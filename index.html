@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt 4</title>
+  <link rel="stylesheet" href="Stylesheet/style.css">
+</head>
+
+    <body>
+
+<header class="site-header">
+  <a class="site-header__logo-link" href="index.html">
+    <img class="site-header__logo" src="images/logo.png" alt="Flying Content logo">
+  </a>
+
+  <nav class="site-header__nav">
+    <a class="site-header__link site-header__link--active" href="index.html">Forside</a>
+    <a class="site-header__link" href="pages/projekter.html">Projekter</a>
+    <a class="site-header__link" href="pages/ansigtet-bag.html">Ansigtet bag</a>
+    <a class="site-header__link" href="pages/kontakt.html">Kontakt</a>
+  </nav>
+
+<button class="site-header__menu-button" type="button" aria-label="Åbn menu" aria-expanded="false">
+  <img class="site-header__menu-icon" src="images/menu-icon.png" alt="">
+</button>
+
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__image-large">
+      <img src="images/hero-big.JPG" alt="Lyse blomster">
+    </div>
+
+    <div class="hero__content">
+      <img class="hero__image-small" src="images/hero-small.jpg" alt="Lampe og blomsterbuket">
+
+      <div class="hero__text-box">
+        <h1 class="hero__title">STAND OUT</h1>
+        <p class="hero__text">
+          Content er virksomheders førstehåndsindtryk — og det skal føles rigtigt.
+        </p>
+        <p class="hero__text">
+          Jeg løfter brands og skaber genkendelighed. Min tilgang er rolig,
+          struktureret og æstetisk — og jeg tror på, at visuelt indhold skal skabe
+          værdi, fortælle en historie og styrke relationen mellem virksomhed og kunde.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2 class="intro__title">
+      Resultater<br>
+      du <em>kan</em> mærke
+    </h2>
+
+    <p class="intro__text">
+      Her finder du et udvalg af mine visuelle produktioner — fra reklamevideoer og
+      kampagner til illustrationer, annoncer og katalogarbejde.
+    </p>
+
+    <p class="intro__text">
+      Jeg arbejder med foto, video og digitalt design, og hvert projekt er skabt med
+      fokus på æstetik, struktur og fortælling. Mit mål er altid det samme: at skabe
+      visuelt indhold, der skaber værdi, fortæller en historie og styrker relationen
+      mellem virksomhed og kunde.
+    </p>
+
+    <a class="button" href="projekter.html">Se projekter</a>
+  </section>
+
+  <section class="project-preview">
+    <img class="project-preview__image" src="images/projekt-1.JPG" alt="Projektbillede">
+    <img class="project-preview__image" src="images/projekt-2.png" alt="Projektbillede">
+    <img class="project-preview__image" src="images/projekt-3.png" alt="Projektbillede">
+    <img class="project-preview__image" src="images/projekt-4.JPG" alt="Projektbillede">
+  </section>
+
+  <section class="about-preview">
+    <div class="about-preview__content">
+      <h2 class="about-preview__title">Ansigtet <em>bag?</em></h2>
+
+      <p class="about-preview__text">
+        Jeg er multimediedesignstuderende med en forkærlighed for visuelt content,
+        der gør en forskel. Jeg arbejder med foto, video og digitalt design, og jeg
+        trives i krydsfeltet mellem æstetik, struktur og fortælling.
+      </p>
+
+      <p class="about-preview__text">
+        Flying Content er mit professionelle univers, hvor jeg samler alt det, jeg
+        brænder for: visuel kommunikation, kreativitet og digitalt håndværk.
+      </p>
+
+      <a class="about-preview__button" href="pages/ansigtet-bag.html">Ansigtet bag</a>
+    </div>
+
+    <img class="about-preview__image" src="images/ditte.png" alt="Portræt af Ditte">
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__logo-box">
+    <img class="site-footer__logo" src="images/logo.png" alt="Flying Content logo">
+  </div>
+
+  <div class="site-footer__column">
+    <h3 class="site-footer__title">Kontakt</h3>
+    <p class="site-footer__text">Ditte Olivia Holm Pedersen</p>
+    <p class="site-footer__text">+45 60 88 39 01</p>
+    <p class="site-footer__text">ditteoliviaholm@hotmail.com</p>
+  </div>
+
+  <div class="site-footer__column">
+    <h3 class="site-footer__title">Navigation</h3>
+    <a class="site-footer__link" href="pages/projekter.html">Projekter</a>
+    <a class="site-footer__link" href="pages/ansigtet-bag.html">Ansigtet bag</a>
+    <a class="site-footer__link" href="pages/kontakt.html">Kontakt</a>
+  </div>
+</footer>
+
+<script>
+  const menuButton = document.querySelector(".site-header__menu-button");
+  const navigation = document.querySelector(".site-header__nav");
+
+  menuButton.addEventListener("click", function () {
+    navigation.classList.toggle("site-header__nav--open");
+
+    const isOpen = navigation.classList.contains("site-header__nav--open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+</script>
+
+</body>
+
+</html>
