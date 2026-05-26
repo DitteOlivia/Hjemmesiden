@@ -36,13 +36,13 @@ img {
 .site-header__link {
   color: #0c0a0b;
   font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
 }
 
 .site-header__link:hover,
 .site-header__link--active {
   color: #868159;
-  font-weight: 700;
 }
 
 .hero {
