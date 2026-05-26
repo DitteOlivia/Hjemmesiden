@@ -36,13 +36,14 @@ img {
 .site-header__link {
   color: #0c0a0b;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 
 .site-header__link:hover,
 .site-header__link--active {
   color: #868159;
+  font-weight: 400;
 }
 
 .hero {
@@ -1520,21 +1521,4 @@ img {
   padding: 0 25px 80px;
 }
 
-}
-
-.site-header .site-header__nav .site-header__link,
-.site-header .site-header__nav a,
-.site-header__link,
-.site-header__link:visited {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 700 !important;
-  color: #0c0a0b;
-  text-decoration: none;
-}
-
-.site-header .site-header__nav .site-header__link:hover,
-.site-header .site-header__nav .site-header__link--active,
-.site-header .site-header__nav a:hover {
-  color: #868159 !important;
-  font-weight: 700 !important;
 }
