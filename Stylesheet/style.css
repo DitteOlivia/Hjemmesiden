@@ -1521,3 +1521,20 @@ img {
 }
 
 }
+
+.site-header .site-header__nav .site-header__link,
+.site-header .site-header__nav a,
+.site-header__link,
+.site-header__link:visited {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
+  color: #0c0a0b;
+  text-decoration: none;
+}
+
+.site-header .site-header__nav .site-header__link:hover,
+.site-header .site-header__nav .site-header__link--active,
+.site-header .site-header__nav a:hover {
+  color: #868159 !important;
+  font-weight: 700 !important;
+}
