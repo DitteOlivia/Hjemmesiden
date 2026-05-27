@@ -136,7 +136,7 @@ img {
   border: none;
 }
 
-.button:hover,
+.intro__button:hover,
 .about-preview__button:hover {
   font-weight: 700;
 }
@@ -1430,7 +1430,7 @@ body {
 
   .about-gallery {
     grid-template-columns: 1fr;
-    padding: 0 25px 80px;
+    padding: 0 25px 40px;
   }
 
   .about-gallery__image {
@@ -1438,12 +1438,12 @@ body {
   }
 
   .tool-palette {
-    padding: 80px 25px;
+    padding: 20px 25px 80px;
   }
 
   .tool-palette__title {
     font-size: 52px;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
   }
 
   .tool-palette__grid {
