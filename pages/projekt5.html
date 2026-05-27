@@ -29,6 +29,10 @@
     <a class="site-header__link" href="kontakt.html">Kontakt</a>
   </nav>
 
+  <button class="site-header__menu-button" type="button" aria-label="Åbn menu" aria-expanded="false">
+    <img class="site-header__menu-icon" src="../images/menu-icon.png" alt="">
+  </button>
+
 </header>
 
 <main>
@@ -179,6 +183,18 @@
   </div>
 
 </footer>
+
+<script>
+  const menuButton = document.querySelector(".site-header__menu-button");
+  const navigation = document.querySelector(".site-header__nav");
+
+  menuButton.addEventListener("click", function () {
+    navigation.classList.toggle("site-header__nav--open");
+
+    const isOpen = navigation.classList.contains("site-header__nav--open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+</script>
 
 </body>
 
