@@ -85,7 +85,9 @@ img {
   font-size: 72px;
   font-weight: 400;
   letter-spacing: 1px;
+  line-height: 0.95;
   margin-bottom: 45px;
+  overflow-wrap: break-word;
 }
 
 .hero__text {
@@ -1026,6 +1028,35 @@ img {
   margin-top: 0;
 }
 
+
+@media (max-width: 1100px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image-large img {
+    height: 420px;
+  }
+
+  .hero__content {
+    padding: 70px 40px;
+  }
+
+  .hero__image-small {
+    display: none;
+  }
+
+  .hero__text-box {
+    max-width: 680px;
+  }
+
+  .hero__title {
+    font-size: 58px;
+  }
+
+}
+
 @media (max-width: 700px) {
 
   .linkedin-banner-intro {
@@ -1269,6 +1300,18 @@ img {
 }
 
 @media (max-width: 900px) {
+  .site-header {
+    position: relative;
+  }
+
+  .site-header__menu-button {
+    display: block;
+  }
+
+  .site-header__menu-icon {
+    width: 38px;
+  }
+
   .site-header__nav {
     display: none;
     position: absolute;
@@ -1281,10 +1324,6 @@ img {
     flex-direction: column;
     gap: 25px;
     text-align: center;
-  }
-
-  .site-header {
-    position: relative;
   }
 
   .site-header__nav--open {
