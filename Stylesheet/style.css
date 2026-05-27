@@ -1298,13 +1298,14 @@ body {
     font-size: 15px;
   }
 
-  .project-preview {
-    grid-template-columns: 1fr;
-    padding: 0 25px 60px;
-  }
+.project-preview {
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 0 20px 50px;
+}
 
   .project-preview__image {
-    height: 350px;
+    height: 180px;
   }
 
   .about-preview {
