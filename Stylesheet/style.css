@@ -1028,6 +1028,43 @@ img {
   margin-top: 0;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1100px) {
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .site-footer__logo {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    padding: 60px 30px;
+  }
+
+  .hero__image-small {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 58px;
+    line-height: 0.95;
+  }
+}
+
 
 @media (max-width: 1100px) {
 
